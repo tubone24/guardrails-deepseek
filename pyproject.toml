@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "guardrails-deepseek"
+version = "0.1.0"
+description = ""
+authors = ["tubone <tubo.yyyuuu@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.11.5"
+langchain = "^0.3.17"
+langchain-aws = "^0.2.12"
+nemoguardrails = "^0.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

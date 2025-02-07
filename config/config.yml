@@ -1,0 +1,23 @@
+models:
+  - type: main
+    engine: langchain
+    model: bedrock
+    parameters:
+      model_id: "anthropic.claude-3-sonnet-20240229-v1:0"
+      streaming: True
+      region_name: "ap-northeast-1"
+      max_tokens: 4096
+
+rails:
+  input:
+    flows:
+      - input_rail_check
+  output:
+    flows:
+      - output_rail_check
+
+messages:
+  - role: system
+    content: |
+      センシティブな内容についての質問には答えられません。
+      別のトピックについて話しましょう。

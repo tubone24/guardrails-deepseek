@@ -1,0 +1,14 @@
+define flow input_rail_check
+    $allowed = execute check_sensitive_content
+    if not $allowed
+        bot refuse to respond
+        stop
+
+define flow output_rail_check
+    $allowed = execute check_sensitive_content
+    if not $allowed
+        bot refuse to respond
+        stop
+
+define bot refuse to respond
+    "申し訳ありませんが、その質問にはお答えできません。別のトピックについてお話ししましょう。"
