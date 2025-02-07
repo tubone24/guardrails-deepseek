@@ -1,12 +1,12 @@
-# Deepseekに実装されていると思われるガードレールを実装
+# Guardrails like Deepseek
 
-## 使い方
+## How to use
 
 ```bash
 poetry install
 ```
 
-## 実行
+## run
 
 ```bash
 poetry run python main.py
